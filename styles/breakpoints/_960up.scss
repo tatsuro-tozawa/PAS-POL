@@ -1,0 +1,71 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+// テンプレ
+.font-sm {
+    font-size: 16px;
+}
+.font-md {
+    font-size: 19px;
+}
+.font-lr {
+    font-size: 23px;
+}
+.font-lg {
+    font-size: 36px;
+}
+.mb-lg {
+    margin-bottom: 150px !important;
+}
+.pb-lg {
+    padding-bottom: 150px !important;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+// Header
+.header {
+    &__nav {
+        display: block;
+    }
+    &__nav {
+        @extend .flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    &__ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    &__li {
+        padding: 0;
+        margin-left: 30px;
+
+        & > a {
+            color: $cWhite;
+        }
+    }
+}
+
+.logo {
+    & > img {
+        width: 300px;
+        display: block;
+    }
+    &__title {
+        display: none;
+    }
+}
+
+.head-bar {
+    display: none;
+}
