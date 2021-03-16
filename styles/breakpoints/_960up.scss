@@ -30,6 +30,9 @@ Stylesheet: 960px以上のモニタで適用
 
 // Header
 .header {
+    position: absolute;
+    z-index: 30;
+    padding-top: 80px;
     &__nav {
         display: block;
     }
@@ -58,7 +61,7 @@ Stylesheet: 960px以上のモニタで適用
 
 .logo {
     & > img {
-        width: 300px;
+        width: 250px;
         display: block;
     }
     &__title {
@@ -68,4 +71,10 @@ Stylesheet: 960px以上のモニタで適用
 
 .head-bar {
     display: none;
+}
+
+.hero {
+    &__logo {
+        display: none;
+    }
 }

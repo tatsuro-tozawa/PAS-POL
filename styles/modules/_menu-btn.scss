@@ -38,12 +38,16 @@
 
 .sp-menu {
     display: none;
-    margin-left: -40px;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
 
     & > li {
         box-sizing: border-box;
         border-bottom: 1px solid #fff;
-        background-color: black;
+        background-color:rgba(0,0,0,0.6);
         list-style: none;
     }
     & > li > a {

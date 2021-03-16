@@ -1,3 +1,12 @@
+// Swiper
+const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    speed: 1000,
+    autoplay: true,
+    effect: 'fade'
+});
+
 // ハンバーガーメニュー
 $(function() {
     $(".menu-btn").click(function() {
@@ -7,10 +16,3 @@ $(function() {
         $(".sp-menu").css({display:"none"});
     });
 });
-
-// Swiper
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  });
