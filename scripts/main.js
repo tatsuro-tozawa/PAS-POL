@@ -16,3 +16,14 @@ $(function() {
         $(".sp-menu").css({display:"none"});
     });
 });
+
+// トップへ戻るボタン
+$(function() {
+    $('#page_top a').on('click',function(){
+      $('body, html').animate({
+        scrollTop:0
+      }, 800);
+        event.preventDefault();
+    });
+  
+  });
