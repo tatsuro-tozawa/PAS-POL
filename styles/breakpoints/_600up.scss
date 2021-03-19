@@ -3,3 +3,19 @@
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+.product {
+    &__item-link {
+        display: flex;
+        justify-content: flex-start;
+
+        &:hover {
+            display: flex;
+        }
+    }
+
+    &__item-image {
+        & > img {
+            width: 200px;
+        }
+    }
+}
