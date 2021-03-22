@@ -78,3 +78,41 @@ Stylesheet: 960px以上のモニタで適用
         display: none;
     }
 }
+
+.concept {
+    &__inner {
+        text-align: center;
+    }
+
+    &__title-box {
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+.product {
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__item-link {
+        display: block;
+
+        &:hover {
+            display: block;
+        }
+    }
+}
+
+.news {
+    &__item-image {
+        & > img {
+            width: 300px;
+        }
+    }
+}

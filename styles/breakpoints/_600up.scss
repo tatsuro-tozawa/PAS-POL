@@ -3,6 +3,26 @@
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+// テンプレ
+.font-sm {
+    font-size: 16px;
+}
+.font-md {
+    font-size: 19px;
+}
+.font-lr {
+    font-size: 23px;
+}
+.font-lg {
+    font-size: 36px;
+}
+.mb-lg {
+    margin-bottom: 150px !important;
+}
+.pb-lg {
+    padding-bottom: 150px !important;
+}
+
 .product {
     &__item-link {
         display: flex;
@@ -17,5 +37,47 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         & > img {
             width: 200px;
         }
+    }
+}
+
+.news {
+    &__item-link {
+        display: flex;
+        justify-content: flex-start;
+
+        &:hover {
+            display: flex;
+        }
+    }
+
+    &__item-image {
+        & > img {
+            width: 200px;
+        }
+    }
+
+    &__introduction {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+
+    &__item-text {
+        display: block;
+    }
+}
+
+.share {
+    padding-top: 35px;
+    padding-bottom: 0;
+
+    &__Buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    &__btn-Line {
+        display: none;
     }
 }

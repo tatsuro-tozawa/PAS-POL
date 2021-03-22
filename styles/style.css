@@ -283,7 +283,6 @@ a:hover {
   width: 100%;
   margin-top: 30px;
   padding: 0 !important;
-  text-align: center;
 }
 
 .product__item-link:hover {
@@ -521,6 +520,24 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+  .font-sm, .news__introduction {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 19px;
+  }
+  .font-lr, .product__item-title {
+    font-size: 23px;
+  }
+  .font-lg {
+    font-size: 36px;
+  }
+  .mb-lg {
+    margin-bottom: 150px !important;
+  }
+  .pb-lg, .concept, .news {
+    padding-bottom: 150px !important;
+  }
   .product__item-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -536,6 +553,44 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   .product__item-image > img {
     width: 200px;
+  }
+  .news__item-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .news__item-link:hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .news__item-image > img {
+    width: 200px;
+  }
+  .news__introduction {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .news__item-text {
+    display: block;
+  }
+  .share {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
+  .share__Buttons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .share__btn-Line {
+    display: none;
   }
 }
 
@@ -619,6 +674,31 @@ Stylesheet: 960px以上のモニタで適用
   }
   .hero__logo {
     display: none;
+  }
+  .concept__inner {
+    text-align: center;
+  }
+  .concept__title-box {
+    text-align: left;
+    display: inline-block;
+  }
+  .product__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .product__item {
+    text-align: center;
+  }
+  .product__item-link {
+    display: block;
+  }
+  .product__item-link:hover {
+    display: block;
+  }
+  .news__item-image > img {
+    width: 300px;
   }
 }
 
